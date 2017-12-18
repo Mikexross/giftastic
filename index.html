@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>GifTastic</title>
+    <!-- bootstrap cdn -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- link to external css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>TV Gifs</h1>
+    </div>
+    <div class="container">
+        <!-- div for buttons containing initial topics -->
+        <div class="row">
+            <div class="col-md-12" id="topics"></div>
+        </div>
+        <div class="row">
+            <!-- div for search form -->
+            <div class="search text-center">
+                <h3>Add Show</h3>
+                <input type="text" name="addTopic" value="" id="search" placeholder="TV Show Name">
+                <br>
+                <br>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+            <!-- div to display results from search -->
+            <div class="results text-center">
+                <h3 id="startStop">Click on Gif to Start/Stop</h3>
+                <div class="" id="display"></div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- external link to .js -->
+    <script type="text/javascript" src="./assets/javascript/logic.js"></script>
+</body>
+
+</html>
